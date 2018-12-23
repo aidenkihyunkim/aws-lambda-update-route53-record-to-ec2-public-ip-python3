@@ -15,9 +15,6 @@ Resources:
         - Action:
           - ec2:DescribeInstances
           - ec2:DescribeTags
-          Resource: '*'
-          Effect: Allow
-        - Action:
           - route53:ListHostedZones
           - route53:ChangeResourceRecordSets
           Resource: '*'

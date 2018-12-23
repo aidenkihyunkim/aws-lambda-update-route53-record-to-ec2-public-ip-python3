@@ -4,6 +4,8 @@ In the case of AWS EC2, it's public IP address (not Elastic IP) changes fluidly.
 
 This function performs the function of inserting/updating the host record of Route53 (DNS) automatically using the CloudWatch event of EC2 state changing, considering that the public IP change when EC2 is started.
 
+This function is available at **[AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:884430845962:applications~Update-Route53-Record-to-Ec2-PublicIp-Python3)** too.
+
 # How to use this?
 
 1. Please deploy the application and specify threshold.
