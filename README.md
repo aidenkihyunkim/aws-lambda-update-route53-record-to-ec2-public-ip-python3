@@ -6,13 +6,13 @@ This function performs the function of inserting/updating the host record of Rou
 
 This function is available at **[AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:884430845962:applications~Update-Route53-Record-to-Ec2-PublicIp-Python3)** too.
 
-# How to use this?
+## How to use this?
 
 1. Please deploy the application and specify threshold.
 2. Add FQDN as **Route53FQDN** tag to each EC2 instances that you want to register record of public IP to Route53.
 3. Now your Route53 records will update when state of EC instances changed to **running**.
 
-# Lambda environment variables
+## Lambda environment variables
 
 - **dns_tag_key** : (Optional) EC2 Tag key for define FQDN.
     - Default value : Route53FQDN
@@ -21,7 +21,7 @@ This function is available at **[AWS Serverless Application Repository](https://
 - **dns_record_ttl** : (Optional) TTL value of Route53 record
     - Default value : 60
 
-# Execution IAM policy
+## Execution IAM policy
 This Serverless application creates a IAM policy as below.
 ```json
 {
@@ -41,7 +41,7 @@ This Serverless application creates a IAM policy as below.
 }
 ```
 
-# FAQ
+## FAQ
 
 - Do I need to create a Route53 zone or record in advance?
     - If there is no zone containing the provided FQDN, an error occurs. **The zone must be created in advance**.
@@ -78,6 +78,6 @@ This Serverless application creates a IAM policy as below.
     - If there are multiple parent domain zones within your AWS account, **this function will change records in the lowest child domain zone** that matches the FQDN provided.
 
 
-# License
+## License
 
 MIT License (MIT)
