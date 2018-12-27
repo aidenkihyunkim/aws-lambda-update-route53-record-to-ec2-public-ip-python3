@@ -6,6 +6,12 @@ This function performs the function of inserting/updating the host record of Rou
 
 This function is available at **[AWS Serverless Application Repository](https://serverlessrepo.aws.amazon.com/applications/arn:aws:serverlessrepo:us-east-1:884430845962:applications~Update-Route53-Record-to-Ec2-PublicIp-Python3)** too.
 
+## Features
+- Serverless, Works only on the AWS layer without any OS manipulation.
+- Supports multiple EC2 + Route53 Record pairs with a single Lambda function.
+- A new EC2 + Route53 Record pair can attach simply by adding EC2 tag only without modifying the source or AWS configuration.
+- Supports CNAME or A record type and Record TTL can be specified.
+
 ## How to use this?
 
 1. Please deploy the application and specify threshold.
