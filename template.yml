@@ -22,7 +22,7 @@ Resources:
       CodeUri:
         Bucket: <%REPO_BUCKET%>
         Key: 76504247-098c-413a-abff-aadd8a6de03f
-      Runtime: python3.6
+      Runtime: python3.9
       Events:
         EC2StateChangeEvent:
           Type: CloudWatchEvent
